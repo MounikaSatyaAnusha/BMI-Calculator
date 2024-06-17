@@ -1,0 +1,65 @@
+<!DOCTYPE html >
+<html>
+    <head>
+        <title>BMI calculator </title>
+    </head>
+    <style>
+         body {
+ 
+ background-size:80% ;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+  background-position: center;
+}
+        .sty{
+            width: 520px;
+            height: 450PX;
+            background-color:rgba(231, 222, 222, 0.647);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid black;
+        }
+        .btn{
+        display: block;
+        width: 150px;
+        padding: 10px;
+        border: none;color: black;text-align: center;
+        text-decoration: none;
+        cursor: pointer;border-radius: 3px;
+        display: block;
+        background:khaki;
+        margin: auto;
+        margin-top: 30px;
+    }
+    #resultsX {
+        margin-bottom: 10px;
+       text-align: center;
+            font-size: 20px; 
+    }
+    </style>
+    <body>
+        <div class="sty"> 
+        <h1 style="text-align: center;">BMI Calculator</h1>
+        <label for style="font-size: 20px;margin-left: 20px;;">Age:</label>
+        <input type="number" name="age" id="age">
+        <age id="age"></age><br><br><br>
+        <label for="gender" style="font-size: 20px;margin-left: 20px;">Gender:</label>
+        <input type="radio" id="male"name="gender" id="gender">
+        <label for="gender" >Male:</label>
+        <input type="radio" id="female"name="gender" id="gender">
+        <label for="gender" >Female:</label><br><br><br>
+        <label for style="font-size: 20px;margin-left: 20px;">Weight(kg):</label>
+        <input type="number" name="weight" id="weight"><br>
+        <weight id="weight"></weight><br><br>
+        <label for style="font-size: 20px; margin-left: 20px;">Height(cm): </label>
+        <input type="number" name="height" id="height"><br>
+        <height id="height"></height><br><br>
+            <button  class="btn" onclick="calculator()">Calculate BMI</button>
+            <p id="resultsX"></p>
+           </div>
+    </div>
+    </body>
+    <script src="bmijs.js"></script> 
+</html>
